@@ -68,12 +68,10 @@ SimuGenGPT is an AI tool for generating realistic clinical scenarios in healthca
 
 ### Features
 
-- Auto-Update Documentation Links with current repo name
-- Update Email Addresses: CODE_OF_CONDUCT, SECURITY.
-- Download files & folders from another GitHub Repo
-- Generate Markdown styled index file with SEO details
-- Generate Table of Contents into README
-- Several files already created for you as a template
+- Realistic patient scenarios with detailed patient information
+- Diverse scenarios covering a wide range of medical conditions and backgrounds
+- Integration with UK healthcare guidelines and protocols
+- Capability to generate realistic images of wounds and injuries
 
 ### Built with
 
@@ -106,6 +104,9 @@ Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugengp
 ### Roadmap
 
 - [ ] Finalise Documentation.
+- [ ] Expand scenario database
+- [ ] Enhance scenario customization options
+- [ ] Release version 2.0.0
 
 See the [open issues](https://github.com/smcnab1/SimuGenGPT/issues) for a full list of proposed features (and known issues).
 
