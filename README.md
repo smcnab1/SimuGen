@@ -13,15 +13,15 @@
 <br />
 <div align="center">
   <a href="https://github.com/smcnab1/SimuGenGPT">
-    <img src="images/avatar.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Project Template Repo</h3>
+<h3 align="center">SimuGenGPT</h3>
 
   <p align="center">
-    Jumpstart your development with this versatile template. 🚀📁
+    An AI tool for generating realistic clinical scenarios in healthcare education. 🚀📁
     <br />
-    <a href="https://smcnab1.github.io/project-template-repo/"><strong>Explore the docs »</strong></a>
+    <a href="https://smcnab1.github.io/SimuGenGPT/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/smcnab1/SimuGenGPT">View Demo</a>
@@ -62,7 +62,7 @@ _Last Updated 19 Jun 24_
   </a>
   </div>
   
-This repository can be used as a template to load your new repository with ease. Including the following features to save your time in generating new repositories.
+SimuGenGPT is an AI tool for generating realistic clinical scenarios in healthcare education. It creates diverse, personalised simulations to enhance learning, promote critical thinking, and prepare students for real-world healthcare challenges, ensuring comprehensive and unbiased training.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,10 +77,8 @@ This repository can be used as a template to load your new repository with ease.
 
 ### Built with
 
-- Markdown
+- OpenAI
 - Python
-- GitHub Actions
-- Shell
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,40 +86,17 @@ This repository can be used as a template to load your new repository with ease.
 
 ### Prerequisites
 
-Accessible using browser or GitHub mobile application.
+Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugengpt).
 
 ### Install
 
-1. Click on [use template](https://github.com/new?template_name=project-template-repo&template_owner=smcnab1) to generate new repository from template.
+1. Click on [use template](https://github.com/new?template_name=SimuGenGPT&template_owner=smcnab1) to generate new repository from template.
 
 2. Enter repository name and Description.
 
 3. Generate new repository.
 
 4. Navigate to **Settings > Actions > General** and set ***Workflow Permissions*** to _Read and write permissions_
-
-### Usage
-
-- Repository Link Updater
-    - WIP
-
-- License Date Updater
-    - WIP
-
-- Code of Conduct Email Updater
-    - WIP
-
-- Security Policy Email Updater
-    - WIP
-
-- Table of Contents Generator
-    - WIP
-
-- Index File Generator
-    - WIP
-
-- Combinations
-    - WIP
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,8 +106,6 @@ Accessible using browser or GitHub mobile application.
 ### Roadmap
 
 - [ ] Finalise Documentation.
-- [ ] Remove need for config file, all set within Actions.
-- [ ] Combination Selection instead of individual options.
 
 See the [open issues](https://github.com/smcnab1/SimuGenGPT/issues) for a full list of proposed features (and known issues).
 
