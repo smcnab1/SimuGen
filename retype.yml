@@ -1,0 +1,11 @@
+input: ./
+output: .retype
+url: https://smcnab1.github.io/project-template-repo/ 
+branding:
+  title: Project Template Repo
+  label: Docs
+links:
+  - text: Getting Started
+    link: https://smcnab1.github.io/project-template-repo/
+footer:
+  copyright: "&copy; Copyright . All rights reserved."
