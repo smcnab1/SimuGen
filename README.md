@@ -21,10 +21,8 @@
   <p align="center">
     An AI tool for generating realistic clinical scenarios in healthcare education. 🚀📁
     <br />
-    <a href="https://smcnab1.github.io/SimuGenGPT/"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/smcnab1/SimuGenGPT">View Demo</a>
+    <a href="https://chatgpt.com/g/g-eTexeFjiJ-simugengpt">View Demo</a>
     ·
     <a href="https://github.com/smcnab1/SimuGenGPT/issues">Report Bug</a>
     ·
@@ -85,16 +83,6 @@ SimuGenGPT is an AI tool for generating realistic clinical scenarios in healthca
 ### Prerequisites
 
 Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugengpt).
-
-### Install
-
-1. Click on [use template](https://github.com/new?template_name=SimuGenGPT&template_owner=smcnab1) to generate new repository from template.
-
-2. Enter repository name and Description.
-
-3. Generate new repository.
-
-4. Navigate to **Settings > Actions > General** and set ***Workflow Permissions*** to _Read and write permissions_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
