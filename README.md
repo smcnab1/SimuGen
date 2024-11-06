@@ -12,28 +12,28 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/smcnab1/SimuGenGPT">
-    <img src="images/logo.webp" alt="Logo" width="80" height="80">
+  <a href="https://github.com/smcnab1/SimuGen">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">SimuGenGPT</h3>
+<h3 align="center">SimuGen</h3>
 
   <p align="center">
     An AI tool for generating realistic clinical scenarios in healthcare education. 🚀📁
     <br />
     <br />
-    <a href="https://chatgpt.com/g/g-eTexeFjiJ-simugengpt">View Demo</a>
+    <a href="https://chatgpt.com/g/g-eTexeFjiJ-simugen">View Demo</a>
     ·
-    <a href="https://github.com/smcnab1/SimuGenGPT/issues">Report Bug</a>
+    <a href="https://github.com/smcnab1/SimuGen/issues">Report Bug</a>
     ·
-    <a href="https://github.com/smcnab1/SimuGenGPT/issues">Request Feature</a>
+    <a href="https://github.com/smcnab1/SimuGen/issues">Request Feature</a>
   </p>
 </div>
 
 <details>
   <summary>View Contents</summary>
 
-_Last Updated 19 Jun 24_
+_Last Updated 06 Nov 24_
 <!-- toc -->
 
 - [About The Project](#about-the-project)
@@ -55,12 +55,12 @@ _Last Updated 19 Jun 24_
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-  <a href="https://github.com/smcnab1/SimuGenGPT">
-    <img src="images/screenshot.png" alt="Logo" width="100%" height="auto">
+  <a href="https://github.com/smcnab1/SimuGen">
+    <img src="public/screenshot.png" alt="Logo" width="100%" height="auto">
   </a>
   </div>
   
-SimuGenGPT is an AI tool for generating realistic clinical scenarios in healthcare education. It creates diverse, personalised simulations to enhance learning, promote critical thinking, and prepare students for real-world healthcare challenges, ensuring comprehensive and unbiased training.
+SimuGen is an AI tool for generating realistic clinical scenarios in healthcare education. It creates diverse, personalised simulations to enhance learning, promote critical thinking, and prepare students for real-world healthcare challenges, ensuring comprehensive and unbiased training.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +82,7 @@ SimuGenGPT is an AI tool for generating realistic clinical scenarios in healthca
 
 ### Prerequisites
 
-Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugengpt).
+Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugen).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +96,7 @@ Accessible [via GPT Store on OpenAI](https://chatgpt.com/g/g-eTexeFjiJ-simugengp
 - [ ] Enhance scenario customization options
 - [ ] Release version 2.0.0
 
-See the [open issues](https://github.com/smcnab1/SimuGenGPT/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/smcnab1/SimuGen/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,16 +125,16 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/smcnab1/SimuGenGPT.svg?style=for-the-badge
-[contributors-url]: https://github.com/smcnab1/SimuGenGPT/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/smcnab1/SimuGenGPT.svg?style=for-the-badge
-[forks-url]: https://github.com/smcnab1/SimuGenGPT/network/members
-[stars-shield]: https://img.shields.io/github/stars/smcnab1/SimuGenGPT.svg?style=for-the-badge
-[stars-url]: https://github.com/smcnab1/SimuGenGPT/stargazers
-[issues-shield]: https://img.shields.io/github/issues/smcnab1/SimuGenGPT.svg?style=for-the-badge
-[issues-url]: https://github.com/smcnab1/SimuGenGPT/issues
-[license-shield]: https://img.shields.io/github/license/smcnab1/SimuGenGPT.svg?style=for-the-badge
-[license-url]: https://github.com/smcnab1/SimuGenGPT/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/smcnab1/SimuGen.svg?style=for-the-badge
+[contributors-url]: https://github.com/smcnab1/SimuGen/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/smcnab1/SimuGen.svg?style=for-the-badge
+[forks-url]: https://github.com/smcnab1/SimuGen/network/members
+[stars-shield]: https://img.shields.io/github/stars/smcnab1/SimuGen.svg?style=for-the-badge
+[stars-url]: https://github.com/smcnab1/SimuGen/stargazers
+[issues-shield]: https://img.shields.io/github/issues/smcnab1/SimuGen.svg?style=for-the-badge
+[issues-url]: https://github.com/smcnab1/SimuGen/issues
+[license-shield]: https://img.shields.io/github/license/smcnab1/SimuGen.svg?style=for-the-badge
+[license-url]: https://github.com/smcnab1/SimuGen/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/sammcnab/
 [product-screenshot]: images/screenshot.png
