@@ -1,6 +1,6 @@
 ---
 name: generate-clinical-scenario
-description: Create structured, realistic clinical simulation scenarios for healthcare education, primarily in UK healthcare settings.
+description: Use when the user wants to create, design, adapt or structure a clinical simulation scenario for healthcare education, primarily in UK healthcare settings.
 ---
 
 # Clinical Scenario Generation
