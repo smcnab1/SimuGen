@@ -1,25 +1,44 @@
-## Proposed changes
+## Summary
 
-Describe the big picture of your changes here to communicate to the maintainers why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue.
+Briefly describe what this pull request changes and why.
 
-## Types of changes
+Closes #<!-- issue number, if applicable -->
 
-What types of changes does your code introduce to this project?
-_Put an `x` in the boxes that apply_
+## Change type
 
-- [ ] Bugfix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation Update (if none of the other choices apply)
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Plugin / skill improvement
+- [ ] Clinical content or scenario structure
+- [ ] Website / UI
+- [ ] Documentation
+- [ ] Maintenance / dependencies
+- [ ] Breaking change
+
+## What changed?
+
+<!-- List the main changes in this PR. -->
+
+-
+-
+
+## Testing
+
+Describe how you tested the change.
+
+<!-- Include relevant commands, manual checks or test cases where appropriate. -->
 
 ## Checklist
 
-_Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code._
+- [ ] I have read and followed `CONTRIBUTING.md`
+- [ ] The change is focused and does not include unrelated modifications
+- [ ] I have tested the affected functionality
+- [ ] I have added or updated tests where appropriate
+- [ ] I have updated documentation where required
+- [ ] I have not committed secrets, credentials or sensitive information
+- [ ] Clinical content, where applicable, is appropriate for healthcare simulation and does not present generated material as a substitute for local clinical guidance
+- [ ] Plugin changes preserve SimuGen's intended scope and safety boundaries
 
-- [ ] I have read the CONTRIBUTING.md
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] I have added necessary documentation (if appropriate)
+## Additional context
 
-## Further comments
-
-If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...
+<!-- Optional: screenshots, design decisions, limitations or anything reviewers should know. -->
