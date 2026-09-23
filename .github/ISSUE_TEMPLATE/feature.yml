@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest a new capability or improvement for SimuGen
+title: "[Feature]: "
+labels:
+
+- enhancement
+  body:
+- type: markdown
+  attributes:
+  value: |
+  Use this form for new features, workflow improvements and general enhancements.
+
+      For concerns about the clinical accuracy or educational quality of generated content, use the Clinical content issue form instead.
+
+- type: textarea
+  id: problem
+  attributes:
+  label: What problem would this solve?
+  description: Describe the need or workflow rather than only the proposed solution.
+  placeholder: As a healthcare educator, I want to...
+  validations:
+  required: true
+
+- type: textarea
+  id: proposal
+  attributes:
+  label: Proposed improvement
+  description: Describe how you think SimuGen could address this.
+  validations:
+  required: true
+
+- type: dropdown
+  id: area
+  attributes:
+  label: Area
+  options: - Scenario generation - Scenario review - Faculty guidance - Learner materials - Debriefing - Clinical evidence - Images or moulage - Website - Plugin experience - Other
+  validations:
+  required: true
+
+- type: textarea
+  id: example
+  attributes:
+  label: Example
+  description: Provide an example workflow, prompt or expected output if useful.
+
+- type: textarea
+  id: alternatives
+  attributes:
+  label: Alternatives considered
+  description: Optional - describe any other approaches you considered.
+
+- type: checkboxes
+  id: checks
+  attributes:
+  label: Before submitting
+  options: - label: I have checked that an existing issue does not already request this feature.
+  required: true - label: I have not included identifiable patient or confidential information.
+  required: true

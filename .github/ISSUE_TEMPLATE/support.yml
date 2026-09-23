@@ -1,0 +1,52 @@
+name: Question or support
+description: Ask a question about using or contributing to SimuGen
+title: "[Support]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for questions about SimuGen, the plugin, repository or contribution process.
+
+        Do not include identifiable patient information, confidential information or other sensitive data.
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Using SimuGen
+        - Scenario generation
+        - Installation or plugin access
+        - Website
+        - Contributing
+        - Development
+        - Privacy or terms
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like help with?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any information that would help answer the question.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have checked the README and existing issues first.
+          required: true
+        - label: I have not included identifiable patient, confidential or sensitive personal information.
+          required: true

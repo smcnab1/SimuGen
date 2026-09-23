@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Github, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ShieldCheck } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 
 const basePath = process.env.NODE_ENV === "production" ? "/SimuGen" : "";
 
@@ -33,7 +34,7 @@ export default function PrivacyPage() {
             rel="noreferrer"
             className="flex items-center gap-2 text-sm text-white/40 transition hover:text-white"
           >
-            <Github className="h-4 w-4" />
+            <SiGithub className="h-4 w-4" />
             GitHub
           </a>
         </div>

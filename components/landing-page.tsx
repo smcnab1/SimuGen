@@ -3,12 +3,13 @@ import {
   Activity,
   ArrowUpRight,
   Check,
-  Github,
   MessageSquareText,
   ShieldCheck,
   Sparkles,
   Stethoscope,
 } from "lucide-react";
+
+import { SiGithub } from "@icons-pack/react-simple-icons";
 
 const basePath = process.env.NODE_ENV === "production" ? "/SimuGen" : "";
 
@@ -61,7 +62,7 @@ export function LandingPage() {
               rel="noreferrer"
               className="hidden items-center gap-2 rounded-full px-4 py-2 text-sm text-white/60 transition hover:bg-white/5 hover:text-white sm:flex"
             >
-              <Github className="h-4 w-4" />
+              <SiGithub className="h-4 w-4" />
               GitHub
             </a>
 
@@ -120,7 +121,7 @@ export function LandingPage() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-medium text-white/75 transition hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
               >
-                <Github className="h-4 w-4" />
+                <SiGithub className="h-4 w-4" />
                 View source
               </a>
             </div>
