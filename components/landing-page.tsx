@@ -13,7 +13,7 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 
 const basePath = process.env.NODE_ENV === "production" ? "/SimuGen" : "";
 
-const chatGptUrl = "https://chatgpt.com/g/g-eTexeFjiJ-simugen";
+const chatGptUrl = "https://chatgpt.com/plugins/plugins_6ab3b44c4dac8191974976c0d09f0180";
 
 const supportUrl =
   "https://github.com/smcnab1/SimuGen/issues/new/choose";
