@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clinical Scenario Generator"
+  short_description: "Create structured clinical simulations"
+  default_prompt: "Create a clinical simulation scenario for healthcare education."

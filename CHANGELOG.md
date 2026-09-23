@@ -1,39 +1,51 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to SimuGen will be documented in this file.
+
+This project follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
-
-<!--
-Notes for any unreleased changes do here. When a new release is cut, move these from
-the unreleased section to the section for the new release.
--->
-
-Upcoming changes.
 
 ### Added
 
 ### Changed
 
+### Fixed
+
 ### Removed
 
-## [project-template-repo-1.0] - 2024-01-01
+## [1.0.0] - 2026-09-23
 
-🌱 Initial Release.
+Initial public plugin release.
 
 ### Added
 
-- Auto-Update Documentation Links with current repo name
-- Update Email Addresses: CODE_OF_CONDUCT, SECURITY.
-- Download files & folders from another GitHub Repo
-- Generate Markdown styled index file with SEO details
-- Generate Table of Contents into README
-- Several files already created for you as a template
+- OpenAI plugin package for SimuGen.
+- `plugin.json` manifest and public plugin metadata.
+- `generate-clinical-scenario` skill for structured healthcare simulation scenario generation.
+- UK-focused clinical simulation guidance.
+- Support for learner-level, profession and setting adaptation.
+- Structured patient presentation, observations, investigations and scenario progression.
+- Faculty guidance, equipment requirements and moulage planning.
+- Learning objectives and debriefing prompts.
+- Synthetic patient-data safeguards.
+- Clinical safety boundaries separating simulation content from real-patient clinical advice.
+- Public SimuGen website hosted through GitHub Pages.
+- Privacy Policy and Terms of Service.
+- GitHub Pages deployment workflow.
+- Public support through GitHub Issues.
 
+### Changed
 
-<!--
-These Markdown anchors provide a link to the diff for each release. They should be
-updated any time a new release is cut.
--->
-[Unreleased]: /
-[project-template-repo-1.0]: https://github.com/smcnab1/project-template-repo/releases/tag/project-template-repo-1.0
+- Reworked the original SimuGen GPT instructions into a structured OpenAI skill.
+- Updated project branding and metadata for public plugin distribution.
+- Updated the website for static GitHub Pages deployment.
+- Replaced the previous contact form with GitHub-based support.
+
+### Removed
+
+- Dependency on the previous GPT Store implementation as the primary SimuGen distribution model.
+- Legacy project-template changelog content.
+
+[Unreleased]: https://github.com/smcnab1/SimuGen/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/smcnab1/SimuGen/releases/tag/v1.0.0

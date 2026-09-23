@@ -1,0 +1,101 @@
+name: Clinical content issue
+description: Report inaccurate, unsafe, outdated or educationally inappropriate clinical content
+title: "[Clinical]: "
+labels:
+  - clinical-content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report concerns about the clinical or educational content produced by SimuGen.
+
+        **Do not include information about a real patient.**
+        Use fictional or fully synthetic examples only.
+
+        SimuGen is intended for healthcare education and simulation design, not real-patient clinical decision-making.
+
+  - type: dropdown
+    id: concern
+    attributes:
+      label: Type of concern
+      options:
+        - Clinical inaccuracy
+        - Medication or dosing information
+        - Guideline or evidence issue
+        - Unrealistic observations or physiology
+        - Inappropriate scenario progression
+        - Scope-of-practice issue
+        - Educational or simulation-design issue
+        - Diversity or inclusion concern
+        - Patient-safety concern
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: scenario
+    attributes:
+      label: What did SimuGen produce?
+      description: |
+        Provide only the relevant section of the generated scenario or a synthetic example.
+        Do not paste identifiable real-patient information.
+    validations:
+      required: true
+
+  - type: textarea
+    id: concern-details
+    attributes:
+      label: What is the concern?
+      description: Explain what appears inaccurate, unsafe, outdated or inappropriate.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it have said or done instead?
+      description: Describe the expected clinical or educational behaviour where possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: |
+        Provide relevant authoritative sources where available, such as NICE, NHS,
+        Resuscitation Council UK, BNF, JRCALC or professional-body guidance.
+      placeholder: |
+        Guidance/source:
+        URL:
+        Relevant section or recommendation:
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Potential impact
+      options:
+        - Minor educational issue
+        - Could cause learner misunderstanding
+        - Potentially unsafe clinical teaching
+        - Significant patient-safety concern if applied in practice
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include learner level, profession or setting if relevant.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: This report contains no identifiable real-patient information.
+          required: true
+        - label: I understand SimuGen is intended for simulation and healthcare education rather than real-patient clinical decision-making.
+          required: true
+        - label: I have checked that an existing issue does not already cover this concern.
+          required: true
