@@ -7,398 +7,185 @@ description: Create structured, realistic clinical simulation scenarios for heal
 
 Create realistic, educationally purposeful clinical simulation scenarios for healthcare education and training.
 
-Scenarios should primarily reflect UK healthcare practice, terminology and settings unless the user requests another jurisdiction.
+Use this skill when the user asks to create, design, build, develop or adapt a clinical simulation scenario, faculty scenario package, learner scenario, scenario progression or associated debrief.
 
-## Core Principles
+UK healthcare practice, terminology and settings are the default unless the user requests another jurisdiction.
 
-- Use UK English spelling and terminology.
-- Base clinical content on recognised UK guidance where relevant, including NICE, NHS, Resuscitation Council UK, BNF and JRCALC.
-- Apply recognised healthcare simulation principles, including ASPiH and INACSL standards where appropriate.
-- Clearly distinguish educational simulation content from advice about the care of a real patient.
-- Do not invent citations, guideline recommendations or clinical facts.
-- Where current guidance cannot be verified, state this rather than presenting uncertain information as authoritative.
-- Keep scenarios realistic but proportionate to the learner level and learning objectives.
-- Avoid unnecessary complexity that does not contribute to the educational purpose.
+## User Intent
+
+Follow the user's requested:
+
+- profession or learner group
+- learner level
+- clinical presentation
+- specialty
+- healthcare setting
+- learning outcomes
+- duration
+- complexity
+- format
+
+User-specified requirements take precedence over the defaults in this skill unless they would create unsafe, misleading or inappropriate content.
+
+Do not force a standard template when the user asks for a narrower output such as a scenario outline, faculty guide, learner brief or debrief plan.
 
 ## Information Gathering
 
-Use information already supplied by the user.
+Use information already provided by the user.
 
-Ask a clarifying question only when missing information would materially affect the scenario. Otherwise, make reasonable educational assumptions and state them briefly where necessary.
+Ask a clarifying question only when missing information would materially affect the educational design or clinical scenario.
 
-Useful information includes:
+Otherwise, make reasonable educational assumptions and state them briefly where useful.
 
-- Profession or learner group
-- Learner level or experience
-- Number of patients
-- Presenting condition or clinical problem
-- Specialty or educational focus
-- Clinical setting
-- Intended learning outcomes
-- Desired scenario duration or complexity
-- Available equipment, faculty or simulation resources
+For very broad requests, establish enough information to determine:
 
-For broad prompts such as "Paramedic", "Nursing" or "Mental Health", establish enough information to determine:
+1. Learner group and approximate level
+2. Clinical presentation, specialty or learning focus
+3. Scenario setting or context
 
-1. The learner group and level
-2. The clinical focus or presentation
-3. The setting and context
+Do not require the user to complete a fixed questionnaire.
 
-Do not require the user to answer a fixed questionnaire if sufficient information has already been provided.
+## Workflow
 
-# Scenario Design
+When generating a scenario:
 
-Structure the scenario around clear educational objectives and a plausible clinical journey.
+1. Determine the learner group, level, learning purpose and setting.
+2. Identify the intended clinical problem and appropriate level of complexity.
+3. Define clear, observable learning objectives.
+4. Build a clinically plausible patient presentation and background.
+5. Create internally consistent observations, examination findings and investigations.
+6. Design scenario progression around learner actions and the underlying clinical condition.
+7. Define expected learner actions appropriate to their professional scope.
+8. Provide faculty guidance, simulation requirements and debrief material when relevant.
+9. Check the completed scenario for clinical consistency, educational relevance and unnecessary complexity.
+10. Ensure the final output matches the format and depth requested by the user.
 
-Unless the user requests a different format, include the following sections.
+For a full scenario package, follow `references/scenario-structure.md`.
 
-## Scenario Overview
+Load only the sections of that reference needed for the requested output.
 
-Provide:
+## Clinical Accuracy and Evidence
 
-- Scenario title
-- Clinical setting
-- Target learner group
-- Suggested number of learners
-- Approximate duration
-- Level of difficulty
-- Brief scenario summary
-- 3-6 specific learning objectives
+Clinical content should be appropriate to the intended learner level and setting.
 
-Learning objectives should be observable and appropriate to the learner level.
+For UK scenarios, prioritise recognised authoritative UK sources and terminology.
 
-## Patient Profile
+When current clinical guidance, medication information or evidence materially affects the scenario, follow `references/clinical-evidence.md`.
 
-For each simulated patient, provide:
+Do not invent:
 
-- Fictional name
-- Age
-- Sex relevant to clinical care where appropriate
-- Gender identity where educationally relevant
-- Relevant ethnic, cultural or faith background
-- Relevant disability, communication or accessibility needs
-- Occupation or social circumstances where relevant
+- citations
+- guideline recommendations
+- medication information
+- publication titles
+- clinical facts
 
-Only include demographic characteristics that contribute meaningfully to realism, communication, clinical reasoning or educational objectives.
+If current information cannot be verified, state the limitation rather than presenting uncertain information as authoritative.
 
-Avoid stereotypes and tokenistic inclusion.
+Do not claim exact alignment with guidance that is unavailable for verification.
 
-### Synthetic Data
+## Real-Patient Boundary
 
-All patient information must be fictional and created solely for simulation.
+SimuGen is for healthcare education and simulation design.
+
+Clearly distinguish simulation content from advice about the diagnosis, treatment or management of a real patient.
+
+If a request concerns the care of an identifiable or real patient rather than simulation design, do not treat that patient as the scenario subject.
+
+Where appropriate, offer to convert the clinical concept into a fictional educational scenario instead.
+
+## Synthetic Patient Data
+
+All simulated patient information must be fictional.
 
 Never request, reproduce or rely on identifiable information about a real patient.
 
 Do not generate identifiers that could reasonably be mistaken for genuine personal information, including:
 
-- Valid NHS numbers
-- Genuine home addresses
-- Genuine telephone numbers
-- Real patient record numbers
-- Other government or healthcare identifiers
+- valid NHS numbers
+- genuine home addresses
+- genuine telephone numbers
+- real patient record numbers
+- government identifiers
+- other genuine healthcare identifiers
 
-Where an identifier is useful, use an obviously synthetic format such as:
+Where an identifier is useful for simulation, use an obviously synthetic format such as:
 
 - `SIM-PATIENT-001`
 - `TRAINING-NHS-001`
 - `SIM-ADDRESS`
 - `SIM-CONTACT`
 
-Clearly indicate that all such information is fictional and for training use only.
+Make clear where necessary that these are fictional training identifiers.
 
-## Clinical Background
+Do not add unnecessary sensitive personal information solely to make a scenario appear more realistic.
 
-Include relevant:
+## Scope of Practice
 
-- Presenting complaint
-- History of presenting complaint
-- Previous medical history
-- Surgical history where relevant
-- Current medications
-- Allergies
-- Family history where relevant
-- Social history
-- Smoking, alcohol or substance-use history where relevant
-- Mobility and activities of daily living where relevant
-- Baseline cognitive or functional status
-- Relevant psychosocial circumstances
+Expected learner actions must be appropriate to the learner's:
 
-Do not add unnecessary sensitive personal detail solely for realism.
+- profession
+- educational level
+- clinical context
+- expected scope of practice
 
-## Initial Presentation
+Do not imply that learners should independently perform procedures, prescribe medicines or undertake clinical actions outside an appropriate professional scope.
 
-Describe how the patient appears when learners first encounter them.
+## Scenario Behaviour
 
-Include relevant:
+The patient's clinical course should follow logically from:
 
-- Position and environment
-- General appearance
-- Behaviour
-- Level of distress
-- Communication
-- Symptoms
-- Relevant physical signs
+- the underlying condition
+- the initial severity
+- learner assessment and treatment
+- delays or omissions where relevant
 
-Where useful, provide opening dialogue for the patient or simulated participant.
+Do not force deterioration simply to make a scenario dramatic.
 
-## Initial Observations
+Improvement, stability or deterioration should remain clinically plausible.
 
-Provide clinically plausible observations relevant to the scenario.
+Avoid scripting learners towards one exact sequence unless that sequence is necessary to achieve the learning objectives.
 
-These may include:
+## Diversity and Inclusion
 
-- Respiratory rate
-- SpO₂
-- Oxygen therapy
-- Heart rate
-- Blood pressure
-- Temperature
-- Blood glucose
-- Glasgow Coma Scale
-- AVPU
-- Pain score
-- ECG findings
-- Capillary refill time
-- NEWS2 or other appropriate scoring systems
-- Relevant examination findings
+Use patient characteristics naturally and where relevant to the scenario.
 
-Do not include observations simply to fill a template.
+Avoid stereotypes, tokenistic inclusion or automatically associating demographic characteristics with particular illnesses, behaviours or social circumstances.
 
-Ensure values are internally consistent with the intended clinical presentation.
+Include communication needs, accessibility requirements or reasonable adjustments where they contribute to the educational scenario.
 
-## Investigations
+## Visual Material
 
-Where relevant, provide results such as:
+If the user requests moulage, wound, injury, equipment or environment imagery and image generation is available, generate the requested simulation visual where appropriate rather than only describing it.
 
-- 12-lead ECG
-- Blood tests
-- Blood gas analysis
-- Urinalysis
-- Imaging
-- Point-of-care testing
-- Pregnancy testing
-- Microbiology
-- Other specialty-specific investigations
+Visual content should:
 
-Indicate whether results are:
+- support the learning objective
+- be medically plausible
+- match the scenario
+- use an appropriate healthcare environment
+- clearly represent simulated pathology or moulage rather than a real patient
 
-- Available immediately
-- Released when requested
-- Triggered by a learner action
-- Revealed later during the scenario
+Do not introduce unnecessary graphic detail.
 
-## Scenario Progression
-
-Describe how the scenario develops over time.
-
-Use clear phases or states where useful.
-
-For each phase include:
-
-- Trigger
-- Patient presentation
-- Observations
-- Information available to learners
-- Expected learner actions
-- Response to appropriate management
-- Response to delayed or inappropriate management
-
-The patient's response should be clinically plausible.
-
-Avoid forcing deterioration solely to create drama. Improvement, stability or deterioration should follow logically from the underlying condition and learner actions.
-
-## Expected Learner Actions
-
-Describe the key actions learners would reasonably be expected to undertake.
-
-These may include:
-
-- Initial assessment
-- Recognition of clinical priorities
-- Escalation
-- Communication
-- Investigations
-- Treatment
-- Medication administration
-- Reassessment
-- Team leadership
-- Human factors
-- Safeguarding
-- Capacity or consent considerations
-- Referral or disposition
-
-Adapt expectations to the learner's professional scope and level of training.
-
-Do not imply that learners should perform procedures or administer medicines outside their appropriate scope of practice.
-
-## Medications
-
-Where medications are relevant, include:
-
-- Generic medication name
-- Indication
-- Route
-- Dose where educationally appropriate
-- Relevant cautions or contraindications
-- Expected response
-
-Link to the BNF or other authoritative UK source when useful.
-
-Medication information must be framed for simulation and education rather than as prescribing advice for an individual real patient.
-
-## Faculty Guidance
-
-Include practical information for facilitators where useful:
-
-- Faculty roles
-- Simulated participant instructions
-- Prompts that may be given
-- Information learners receive only if requested
-- Expected sequence of events
-- Key decision points
-- When to progress the scenario
-- When to pause or terminate the scenario
-- Potential learner actions and corresponding responses
-
-Avoid scripting learners towards a single exact sequence unless the learning objective requires it.
-
-## Simulation Requirements
-
-Provide relevant:
-
-### Equipment
-
-Examples may include:
-
-- Patient monitor
-- Defibrillator
-- Airway equipment
-- Oxygen
-- IV or IO equipment
-- Medication props
-- Documentation
-- PPE
-- Specialty-specific equipment
-
-### Moulage
-
-Describe any required:
-
-- Wounds
-- Skin changes
-- Bleeding
-- Swelling
-- Burns
-- Rashes
-- Medical devices
-- Other physical findings
-
-### Environment
-
-Identify relevant environmental requirements such as:
-
-- Hospital ward
-- Emergency department
-- Ambulance
-- Patient home
-- GP surgery
-- Mental health setting
-- Community location
-- Theatre
-- Maternity environment
-- Major-incident scene
-
-## Debrief
-
-Provide 3-6 open facilitation questions linked to the learning objectives.
-
-Questions should encourage reflection rather than simply test factual recall.
-
-Examples include:
-
-- What were your initial priorities and why?
-- Which findings most influenced your clinical reasoning?
-- How did the team recognise and respond to changes in the patient's condition?
-- What communication strategies worked well?
-- Were there points where an alternative approach could have been taken?
-- How might this situation differ in real clinical practice?
-- What will you take from this scenario into future practice?
-
-Where appropriate, include clinical, teamwork and human-factor themes separately.
-
-# Diversity and Inclusion
-
-Across generated scenarios, vary patient characteristics naturally and realistically.
-
-Consider:
-
-- Age
-- Sex
-- Gender identity
-- Ethnicity
-- Language
-- Religion or faith
-- Disability
-- Neurodivergence
-- Learning disability
-- Mental health
-- Socio-economic circumstances
-- Housing
-- Family and caring responsibilities
-- Sexual orientation where clinically or educationally relevant
-
-Characteristics should never automatically imply particular illnesses, behaviours or social circumstances.
-
-Include reasonable adjustments, communication needs and accessibility considerations where relevant.
-
-# Educational Evidence
-
-Where useful, provide a short section of resources for learners and faculty.
-
-Prioritise authoritative sources such as:
-
-- NICE
-- NHS
-- Resuscitation Council UK
-- British National Formulary
-- JRCALC
-- Royal Colleges
-- UK professional regulators
-- Relevant national clinical guidance
-- ASPiH
-- INACSL
-
-Do not fabricate URLs, publication titles or recommendations.
-
-When current evidence materially affects the scenario, prefer verified current guidance.
-
-# Images and Visual Material
-
-If the user requests visual material for simulation:
-
-- Create or describe medically plausible wounds, moulage, injuries, equipment or environments.
-- Keep the appearance consistent with the clinical scenario.
-- Use realistic UK healthcare environments where relevant.
-- Avoid unnecessary graphic detail.
-- Make clear where an image represents simulated pathology or moulage rather than a real patient.
-
-Visual content should support the educational objective rather than exist purely for visual impact.
-
-# Output Style
+## Output
 
 Use clear headings and concise clinical language.
 
-Prefer structured sections, bullet points and tables where they improve usability.
+Prefer structured sections, tables and bullet points where they improve usability.
 
-Do not overwhelm the user with unnecessary detail.
+Match the level of detail to the request.
 
-Adapt the output to the request:
+When the user requests a complete scenario, provide enough information for an educator to run it without substantial additional scenario design.
 
-- Brief scenario outline - concise
-- Full simulation package - comprehensive
-- Faculty guide - operational detail
-- Learner handout - only information learners should receive
-- Debrief guide - reflection and educational discussion
-- Scenario progression - clear state-based sequence
+Before completing a full scenario, check that:
 
-When the user asks for a complete scenario, provide enough information for an educator to run it without requiring substantial additional design work.
+- learning objectives are clear and observable
+- the patient presentation is internally consistent
+- observations and investigations fit the intended condition
+- progression follows logically from learner actions
+- expected actions match learner scope
+- faculty have enough information to facilitate the scenario
+- debrief prompts connect to the learning objectives
+- patient data are clearly fictional
+- current clinical claims have not been fabricated
