@@ -4,39 +4,170 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 45%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 0.5rem;
-  }
-}
+    /* Core surfaces */
+    --background: 225 30% 4%;
+    --foreground: 210 20% 98%;
 
-@layer base {
+    --card: 222 24% 7%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 222 24% 7%;
+    --popover-foreground: 210 20% 98%;
+
+    /* Brand */
+    --primary: 190 95% 60%;
+    --primary-foreground: 222 35% 7%;
+
+    --secondary: 220 18% 12%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 12% 58%;
+
+    --accent: 195 70% 12%;
+    --accent-foreground: 190 95% 75%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Controls */
+    --border: 220 14% 16%;
+    --input: 220 14% 16%;
+    --ring: 190 95% 60%;
+
+    --radius: 0.75rem;
+  }
+
   * {
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground font-body;
+  html {
+    scroll-behavior: smooth;
+    background: #07090d;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    min-height: 100vh;
+    background-color: #07090d;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
+  }
+
+  ::selection {
+    background: rgba(103, 232, 249, 0.22);
+    color: white;
+  }
+}
+
+@layer components {
+  /*
+   * Shared glass surface if you want to reuse the visual language elsewhere.
+   */
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /*
+   * Consistent subtle interactive surface.
+   */
+  .surface-hover {
+    @apply transition duration-200 ease-out;
+  }
+
+  .surface-hover:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.14);
+  }
+}
+
+@layer utilities {
+  /*
+   * Slightly cleaner text wrapping for large marketing headings.
+   */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /*
+   * Hide scrollbars where needed without disabling scrolling.
+   */
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /*
+   * Soft SimuGen brand glow.
+   */
+  .simugen-glow {
+    box-shadow:
+      0 0 0 1px rgba(103, 232, 249, 0.04),
+      0 24px 80px rgba(6, 182, 212, 0.06),
+      0 40px 120px rgba(59, 130, 246, 0.05);
+  }
+}
+
+/*
+ * Accessible focus treatment across native controls and links.
+ */
+:where(
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    [tabindex]:not([tabindex="-1"])
+  ):focus-visible {
+  outline: 2px solid rgba(103, 232, 249, 0.8);
+  outline-offset: 3px;
+}
+
+/*
+ * Keep form autofill from turning dark fields bright white/yellow.
+ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px #101319 inset;
+  transition: background-color 9999s ease-in-out 0s;
+  caret-color: #ffffff;
+}
+
+/*
+ * Respect users who prefer reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

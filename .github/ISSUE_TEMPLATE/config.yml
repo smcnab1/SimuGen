@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
   - name: Send an e-mail to the developer
-    url: mailto:sam@sammcnab.co.uk
+    url: https://sammcnab.co.uk/contact
     about: Please do NOT use this email to post issues or feature requests (only important business/personal contact).
