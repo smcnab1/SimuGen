@@ -8,7 +8,7 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Interactive fictional patient encounters with staged findings, case-based progression and learner controls.
+- Interactive fictional patient encounters with text-only learner turns, staged findings, case-based progression and learner controls.
 - Guided formative debriefing grounded in a simulation record, transcript or learner account.
 - Educator review of scenario quality, including actionable findings and standards mapping.
 - Shared case and encounter handovers, educational standards guidance and host acceptance tests.
@@ -16,11 +16,12 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
-- Updated plugin descriptions and prompts to help users choose between design, practice, debrief and review.
+- Retained written scenario generation and clarified its prompts so users can choose between design, practice, debrief and review.
 
 ### Fixed
 
 - Clarified queued events, pause and restart, and who did what in encounter records. Review findings now identify whether the evidence confirms the issue.
+- NEWS2 guidance requires verification of each component against the applicable scoring chart and a check of the arithmetic before reporting a total. If verification is unavailable, the score remains unverified.
 - Updated the static site's Next.js dependencies to patched versions.
 
 ## [1.0.0] - 2026-09-23

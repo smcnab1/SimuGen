@@ -2,14 +2,16 @@
 
 ## Changes
 
-- **Interactive Clinical Simulation** runs fictional patient encounters with history-taking, assessment, staged results, case-based progression and a concise encounter record.
-- **Clinical Simulation Debrief** uses the available encounter evidence to guide formative reflection, discuss decisions and plan further practice.
+- **Interactive Clinical Simulation** adds text-only fictional patient encounters with staged findings, case-based progression and a concise encounter record.
+- **Conversational Clinical Debrief** adds guided formative reflection on recorded decisions and actions, with one substantive question per turn.
 - **Clinical Scenario Reviewer** reviews supplied educational material for clinical consistency, learning design, facilitation, inclusion and evidence. It gives prioritised findings and proposes revisions when requested.
 - **Clinical Scenario Generator** retains the existing written scenario workflow. Its activation guidance distinguishes authoring a case or debrief plan from running, debriefing and reviewing.
 
 All four skills are included in the portable package under `plugin/`. They share clinical evidence guidance, educational standards and handover conventions. UK practice and terminology remain the default.
 
 ## Clinical governance
+
+Before reporting a NEWS2 total, verify each component against the applicable scoring chart and check the arithmetic. If verification is unavailable, leave the score unverified.
 
 Use fictional cases for formative learning with qualified faculty oversight where applicable. Check current clinical guidance and local requirements before using material in education. Keep identifiers and confidential material out of all inputs. A text-based encounter follows a case plan. Secure assessment, physiological modelling and certification of competence are outside the supported use.
 
@@ -20,8 +22,10 @@ The [educational reference](../plugin/skills/generate-clinical-scenario/referenc
 | Evidence | What it covers |
 | --- | --- |
 | GitHub release candidate checks | Locked installation, ESLint, TypeScript, static site export, YAML, published manifest schema and OpenAI metadata, skill identities, package contents, licence, versions and repository paths. |
-| ChatGPT acceptance | Pending. The [test suite](test-cases.md) has preflight checks, 42 workflow cases and nine generator regressions, including NEWS2 verification and text-only interactive play. Skill discovery, access to sibling references and behaviour in multi-turn sessions require host evidence. |
-| Faculty review | Pending. Record the reviewer, clinical context, evidence and any conditions against the tested revision. |
+| Owner-reported smoke tests | G09B passed after the NEWS2 fix. R13 passed with text-only patient interaction. The reviewer flagged contradictory observations and prescribing outside the student's scope, consistent with V02 and V04. |
+| Observed ward simulation and debrief | One ChatGPT transcript showed natural patient replies, staged initial and repeat observations, separation of ECG intent from action, nurse arrival at reassessment, and an accurate encounter record. Both debrief turns asked one question and the follow-up used the learner's stated concern and recorded actions. This covers the observed portions of R05, D01 and T05. The transcript does not establish the installed ZIP or skill activation. |
+| Outstanding host checks | Skill discovery, packaged reference reads, G09A, repeat runs, fresh-chat debrief handover and the other unexecuted [checklist cases](test-cases.md) remain open. |
+| Qualified faculty acceptance | **Pending.** Record the reviewer, clinical context, evidence and any conditions against the tested revision before merging or publishing. |
 
 Instructions guide the model's output. It may drift from the authored case or lose earlier turns in long conversations. Resume from a reliable learner-safe checkpoint and the case where available. Keep the faculty key in a separate faculty-only conversation and check all clinical content before teaching. A role label in a chat cannot control access to material in that chat.
 
