@@ -6,6 +6,8 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-23
+
 ### Added
 
 - Interactive fictional patient encounters with text-only learner turns, staged findings, case-based progression and learner controls.
@@ -57,5 +59,6 @@ Initial public plugin release.
 - Dependency on the previous GPT Store implementation as the primary SimuGen distribution model.
 - Legacy project-template changelog content.
 
-[Unreleased]: https://github.com/smcnab1/SimuGen/compare/1388ce0f5efb41aa4cd91c5280c69d6a4f552962...HEAD
+[Unreleased]: https://github.com/smcnab1/SimuGen/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/smcnab1/SimuGen/releases/tag/v1.1.0
 [1.0.0]: https://github.com/smcnab1/SimuGen/blob/1388ce0f5efb41aa4cd91c5280c69d6a4f552962/submission/release-notes.md
