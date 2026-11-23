@@ -125,9 +125,11 @@ When using systems such as NEWS2, GCS or other clinical scores:
 
 ## NEWS2
 
+Consult the RCP chart or a verified copy in the current context before calculating or reporting any numerical NEWS2 component scores, subtotals or total. Remembered thresholds do not count as verification. If you cannot consult the chart, retain all supplied observations, explain that the chart could not be checked and omit all numerical NEWS2 scoring. If you include the chart link, state whether you consulted the linked chart.
+
 1. Use a complete set of observations from one assessment point. Identify the applicable SpO₂ scale and whether the patient is breathing air or receiving supplemental oxygen. Use Scale 2 only where a qualified clinician has directed its use for confirmed hypercapnic respiratory failure.
 2. Check every value against the [Royal College of Physicians NEWS2 scoring chart](https://www.rcp.ac.uk/media/alxev00t/news2-chart-1_the-news-scoring-system_0_0.pdf). Record the observation and its points for respiratory rate, oxygen saturation, supplemental oxygen status, systolic blood pressure, pulse, consciousness (including new confusion) and temperature. Check values at band boundaries explicitly. For example, 39.1°C scores 2 points.
-3. Add all seven contributions and recheck the arithmetic against the displayed breakdown before presenting a total. Cite the chart actually consulted. If you cannot consult the chart or a required input is missing, explain the gap and omit the total. Never invent observations or scores or claim a check you did not perform.
+3. Add all seven contributions and recheck the arithmetic against the displayed breakdown before presenting a total. Cite the chart actually consulted. If a required input is missing, explain the gap and omit the total. Never invent observations or scores or claim a check you did not perform.
 
 ## Real-patient and supplied material
 
