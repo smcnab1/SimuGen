@@ -32,10 +32,12 @@ The website uses Node.js 24 LTS and npm.
 ```bash
 npm ci
 npm run lint
+npm run typecheck
+npm run check:plugin
 npm run build
 ```
 
-Use `npm run dev` for local development. The production build exports the site to `out/` for GitHub Pages.
+Use `npm run dev` for local development. The production build exports the site to `out/` for GitHub Pages. The plugin check needs Git and Info-ZIP `unzip`, builds the ZIP from committed `HEAD:plugin` and verifies it against the published schema and repository files.
 
 Package the contents of `plugin/` for submission. See the [host acceptance tests](submission/test-cases.md) and [submission release notes](submission/release-notes.md).
 

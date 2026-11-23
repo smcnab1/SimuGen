@@ -60,7 +60,7 @@ When generating a scenario:
 9. Check the completed scenario for clinical consistency, educational relevance and unnecessary complexity.
 10. Ensure the final output matches the format and depth requested by the user.
 
-For a full scenario package, follow `references/scenario-structure.md`.
+For a full scenario package, follow the [scenario structure](references/scenario-structure.md).
 
 Load only the sections of that reference needed for the requested output. Consult [educational standards](references/educational-standards.md) when designing or mapping objectives, prebriefing, facilitation, debriefing or evaluation.
 
@@ -70,7 +70,7 @@ Clinical content should be appropriate to the intended learner level and setting
 
 For UK scenarios, prioritise recognised authoritative UK sources and terminology.
 
-When current clinical guidance, medication information or evidence materially affects the scenario, follow `references/clinical-evidence.md`.
+When current clinical guidance, medication information or evidence materially affects the scenario, follow the [clinical evidence guidance](references/clinical-evidence.md).
 
 Do not invent:
 
@@ -90,7 +90,7 @@ SimuGen is for healthcare education and simulation design.
 
 Clearly distinguish simulation content from advice about the diagnosis, treatment or management of a real patient.
 
-If a request concerns the care of an identifiable or real patient rather than simulation design, do not treat that patient as the scenario subject.
+If a request concerns current real-patient care, leave the educational workflow and prioritise the host's clinical safety guidance. Use the [urgent-care boundary](references/clinical-evidence.md#real-patient-and-supplied-material) for emergencies.
 
 Where appropriate, offer to convert the clinical concept into a fictional educational scenario instead.
 

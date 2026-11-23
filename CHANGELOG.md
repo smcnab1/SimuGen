@@ -12,10 +12,16 @@ This project follows [Semantic Versioning](https://semver.org/).
 - Guided formative debriefing grounded in a simulation record, transcript or learner account.
 - Educator review of scenario quality, including actionable findings and standards mapping.
 - Shared case and encounter handovers, educational standards guidance and host acceptance tests.
+- Pull-request checks for the static website and the portable plugin ZIP.
 
 ### Changed
 
 - Updated plugin descriptions and prompts to help users choose between design, practice, debrief and review.
+
+### Fixed
+
+- Clarified queued events, pause and restart, and who did what in encounter records. Review findings now identify whether the evidence confirms the issue.
+- Updated the static site's Next.js dependencies to patched versions.
 
 ## [1.0.0] - 2026-09-23
 

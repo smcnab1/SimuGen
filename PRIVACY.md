@@ -1,14 +1,14 @@
 # Privacy Policy
 
-_Last updated: 23 September 2026_
+_Last updated: 23 November 2026_
 
-SimuGen is an open-source ChatGPT plugin for creating clinical simulation scenarios.
+SimuGen is an open-source ChatGPT plugin for working with fictional clinical simulations.
 
 ## Data handling
 
 SimuGen does not operate its own backend service, user accounts, analytics platform or database. The plugin does not independently collect, transmit or store the contents of your conversations.
 
-Use of ChatGPT remains subject to OpenAI's own privacy and data-handling terms.
+The host processes prompts, attachments and encounter records you share. Use of ChatGPT remains subject to OpenAI's privacy and data-handling terms. Keep faculty answer keys out of learner chats.
 
 ## Patient and health information
 

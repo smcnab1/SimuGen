@@ -374,7 +374,7 @@ When the user requests both generation and an immediate blind run, prepare the p
 At completion, supply a short record suitable for debriefing in the current chat or copying into a separate conversation. Include:
 
 - **Context** - case label, objectives, setting, role and completion point.
-- **Events** - key actions in order, including assessor or facilitator interventions where relevant. Distinguish requests and intended actions from completed actions. Include communications, escalation and reassessments that occurred.
+- **Events** - key actions in order for the current attempt. Identify who acted, including simulated team and facilitator interventions. Distinguish requests and intended actions from completed actions. Include communications, escalation and reassessments that occurred.
 - **Findings and progression** - evidence actually disclosed, material state changes and their case triggers, and the state at closure.
 - **Debrief focus** - objective-linked moments for discussion and limits of the available evidence. Leave unconfirmed actions and learner reasoning open for clarification.
 
