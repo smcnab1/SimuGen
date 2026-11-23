@@ -72,6 +72,8 @@ For UK scenarios, prioritise recognised authoritative UK sources and terminology
 
 When current clinical guidance, medication information or evidence materially affects the scenario, follow the [clinical evidence guidance](references/clinical-evidence.md).
 
+When including NEWS2, apply the shared [component scoring and verification steps](references/clinical-evidence.md#news2).
+
 Do not invent:
 
 - citations

@@ -20,7 +20,7 @@ The [educational reference](../plugin/skills/generate-clinical-scenario/referenc
 | Evidence | What it covers |
 | --- | --- |
 | GitHub release candidate checks | Locked installation, ESLint, TypeScript, static site export, YAML, published manifest schema and OpenAI metadata, skill identities, package contents, licence, versions and repository paths. |
-| ChatGPT acceptance | Pending. The [test suite](test-cases.md) has preflight checks, 41 workflow cases and eight generator regressions. Skill discovery, access to sibling references and behaviour in multi-turn sessions require host evidence. |
+| ChatGPT acceptance | Pending. The [test suite](test-cases.md) has preflight checks, 42 workflow cases and nine generator regressions, including NEWS2 verification and text-only interactive play. Skill discovery, access to sibling references and behaviour in multi-turn sessions require host evidence. |
 | Faculty review | Pending. Record the reviewer, clinical context, evidence and any conditions against the tested revision. |
 
 Instructions guide the model's output. It may drift from the authored case or lose earlier turns in long conversations. Resume from a reliable learner-safe checkpoint and the case where available. Keep the faculty key in a separate faculty-only conversation and check all clinical content before teaching. A role label in a chat cannot control access to material in that chat.

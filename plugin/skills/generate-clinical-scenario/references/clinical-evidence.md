@@ -123,6 +123,12 @@ When using systems such as NEWS2, GCS or other clinical scores:
 - avoid presenting a calculated score unless confident it is correct
 - verify current scoring rules where they materially affect the scenario
 
+## NEWS2
+
+1. Use a complete set of observations from one assessment point. Identify the applicable SpO₂ scale and whether the patient is breathing air or receiving supplemental oxygen. Use Scale 2 only where a qualified clinician has directed its use for confirmed hypercapnic respiratory failure.
+2. Check every value against the [Royal College of Physicians NEWS2 scoring chart](https://www.rcp.ac.uk/media/alxev00t/news2-chart-1_the-news-scoring-system_0_0.pdf). Record the observation and its points for respiratory rate, oxygen saturation, supplemental oxygen status, systolic blood pressure, pulse, consciousness (including new confusion) and temperature. Check values at band boundaries explicitly. For example, 39.1°C scores 2 points.
+3. Add all seven contributions and recheck the arithmetic against the displayed breakdown before presenting a total. Cite the chart actually consulted. If you cannot consult the chart or a required input is missing, explain the gap and omit the total. Never invent observations or scores or claim a check you did not perform.
+
 ## Real-patient and supplied material
 
 Use only fictional training data. If real-patient identifiers are provided, avoid repeating or relying on them and ask for a fictional substitute. Never treat details from a current real-patient consultation as simulation inputs. Stop any active roleplay and follow host clinical safety guidance. If the user describes a likely life-threatening UK emergency, direct them to [999](https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/). Use the relevant local emergency route when the jurisdiction is known.

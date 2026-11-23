@@ -7,6 +7,8 @@ description: Use when the user wants to practise a live, fictional clinical enco
 
 Run a formative, text-based encounter. Use UK English and UK practice by default. For a written case or debrief plan, use the generator. For reflection on a completed encounter, use the debrief skill. For educator critique of case material, use the review skill.
 
+Keep the prebrief, scene entry and learner turns in text. Describe the fictional setting and findings in words. Do not search for or add illustrative images, image carousels, articles, link previews or other external media to routine play. If the user explicitly requests a visual, use it only if it supports the case and represents fictional training material. Keep any necessary clinical evidence checks separate from learner-facing turns.
+
 Use [scenario structure and handovers](../generate-clinical-scenario/references/scenario-structure.md#conversational-delivery-and-handovers) to prepare the case and close the encounter. Consult [educational standards](../generate-clinical-scenario/references/educational-standards.md) for prebriefing, facilitation and accessibility. Use [clinical evidence](../generate-clinical-scenario/references/clinical-evidence.md) when guidance materially affects the case.
 
 ## Set up and prebrief
