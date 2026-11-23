@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Clinical Simulation"
+  short_description: "Practise a fictional patient encounter"
+  default_prompt: "Run a fictional ward simulation where I assess the patient and decide what to do next."

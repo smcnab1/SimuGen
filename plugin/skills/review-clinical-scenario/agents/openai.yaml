@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clinical Scenario Reviewer"
+  short_description: "Review a simulation for teaching"
+  default_prompt: "Review my scenario for clinical consistency, learner scope and alignment with its objectives."

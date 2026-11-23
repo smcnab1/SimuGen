@@ -8,11 +8,14 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Interactive fictional patient encounters with staged findings, case-based progression and learner controls.
+- Guided formative debriefing grounded in a simulation record, transcript or learner account.
+- Educator review of scenario quality, including actionable findings and standards mapping.
+- Shared case and encounter handovers, educational standards guidance and host acceptance tests.
+
 ### Changed
 
-### Fixed
-
-### Removed
+- Updated plugin descriptions and prompts to help users choose between design, practice, debrief and review.
 
 ## [1.0.0] - 2026-09-23
 
@@ -47,5 +50,5 @@ Initial public plugin release.
 - Dependency on the previous GPT Store implementation as the primary SimuGen distribution model.
 - Legacy project-template changelog content.
 
-[Unreleased]: https://github.com/smcnab1/SimuGen/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/smcnab1/SimuGen/releases/tag/v1.0.0
+[Unreleased]: https://github.com/smcnab1/SimuGen/compare/1388ce0f5efb41aa4cd91c5280c69d6a4f552962...HEAD
+[1.0.0]: https://github.com/smcnab1/SimuGen/blob/1388ce0f5efb41aa4cd91c5280c69d6a4f552962/submission/release-notes.md
