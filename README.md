@@ -1,362 +1,49 @@
-<div align="center">
-
-<a href="https://smcnab1.github.io/SimuGen/">
-  <img src="public/logo.png" alt="SimuGen logo" width="96" height="96">
-</a>
-
 # SimuGen
 
-**Clinical simulation scenario design for healthcare education**
+SimuGen is an open-source ChatGPT plugin for designing, running, debriefing and reviewing fictional clinical simulations. It uses UK clinical terminology and practice by default and adapts to the profession, learner level, setting and requested jurisdiction.
 
-Create structured, realistic and educationally purposeful clinical simulation scenarios using ChatGPT.
+[Open in ChatGPT](https://chatgpt.com/plugins/plugins_6ab3b44c4dac8191974976c0d09f0180) · [Project website](https://smcnab1.github.io/SimuGen/) · [Changelog](CHANGELOG.md)
 
-[Website](https://smcnab1.github.io/SimuGen/) ·
-[Report an issue](https://github.com/smcnab1/SimuGen/issues) ·
-[Request a feature](https://github.com/smcnab1/SimuGen/issues)
+## Workflows
 
-[![MIT Licence](https://img.shields.io/github/license/smcnab1/SimuGen.svg?style=flat-square)](LICENSE.md)
-[![GitHub release](https://img.shields.io/github/v/release/smcnab1/SimuGen?style=flat-square)](https://github.com/smcnab1/SimuGen/releases)
-[![GitHub issues](https://img.shields.io/github/issues/smcnab1/SimuGen?style=flat-square)](https://github.com/smcnab1/SimuGen/issues)
+| Workflow | What it does | Example prompt |
+| --- | --- | --- |
+| [Generate](plugin/skills/generate-clinical-scenario/SKILL.md) | Produces plans ranging from learner briefs to faculty packages with objectives, staged findings, progression, resources and debrief prompts. | Create a ward deterioration scenario for second-year nursing students, with escalation objectives. |
+| [Run](plugin/skills/run-clinical-simulation/SKILL.md) | Runs a fictional patient encounter in ordinary language. Findings become available through appropriate actions and the case progresses in response. | Run a fictional ward scenario for a second-year student. Let me lead the assessment. |
+| [Debrief](plugin/skills/debrief-clinical-simulation/SKILL.md) | Guides reflection on a completed simulation using the encounter record, a transcript, educator observations or the learner's account. | Debrief my encounter with one question at a time, focusing on when I escalated. |
+| [Review](plugin/skills/review-clinical-scenario/SKILL.md) | Reviews supplied teaching material for clinical consistency, objective alignment, learner scope and delivery. | Review this faculty guide and prioritise changes before teaching. |
 
-</div>
+Run a case and debrief it in the same chat, or copy the encounter record into a new chat. Educators can review a written scenario before running it. For blind practice, start with a learner-only brief and keep the answer key out of the learner's chat.
 
----
+## Clinical and educational use
 
-## About SimuGen
+Use fictional training data. Keep real patient information and identifiers out of chats, attachments and public reports. Use the appropriate clinical pathway for a real patient.
 
-SimuGen is an open-source ChatGPT plugin for designing clinical simulation scenarios for healthcare education and training.
+Review AI-generated material with qualified faculty before teaching. Verify consequential clinical recommendations against current authoritative sources, such as NICE, NHS, Resuscitation Council UK and the BNF, and check relevant local policies. [Clinical evidence guidance](plugin/skills/generate-clinical-scenario/references/clinical-evidence.md)
 
-It helps educators turn a clinical idea, learning objective or broad topic into a structured simulation package that can include patient presentation, observations, investigations, scenario progression, expected learner actions, faculty guidance, equipment, moulage and debriefing prompts.
+Conversational simulations use case-based progression. They support formative practice and feedback. Faculty remain responsible for formal assessment. Keep high-stakes exams in environments with appropriate assessment and access controls. [Educational standards](plugin/skills/generate-clinical-scenario/references/educational-standards.md)
 
-SimuGen is primarily designed around UK healthcare education, terminology and clinical context, while supporting other settings when requested.
+## Development and packaging
 
-## Features
+The portable plugin lives in [plugin/](plugin), with a root manifest, assets and four skill directories. Each skill has a `SKILL.md` and `agents/openai.yaml`. They use shared [scenario and handover conventions](plugin/skills/generate-clinical-scenario/references/scenario-structure.md). ChatGPT supplies the conversation context and host capabilities. SimuGen has no separate service, accounts, database or MCP server.
 
-- Structured clinical simulation scenario generation
-- Adaptation to profession, learner level and clinical setting
-- Clinically plausible patient presentations and observations
-- Scenario progression based on learner actions
-- Learning objectives and expected learner actions
-- Faculty and simulated-patient guidance
-- Equipment, environment and moulage requirements
-- Debriefing questions and discussion themes
-- UK-focused healthcare terminology and evidence sources
-- Synthetic patient data designed specifically for simulation
-- Support for paramedic, nursing, medical, mental health, paediatric, maternity and other healthcare scenarios
-
-## Example prompts
-
-SimuGen can work from anything from a broad idea to a detailed educational brief.
-
-```text
-Create a 20-minute paramedic simulation for final-year students
-managing severe asthma in a home setting.
-```
-
-```text
-Build a ward-based nursing deterioration scenario using NEWS2,
-with staged observations, expected learner actions and debrief questions.
-```
-
-```text
-Create a paediatric emergency simulation with learning objectives,
-faculty guidance, equipment and scenario progression.
-```
-
-```text
-I have these learning outcomes for a simulation session.
-Build a scenario around them for second-year students.
-```
-
-## Scenario output
-
-Depending on the request, SimuGen can produce:
-
-- Scenario overview and learning objectives
-- Patient profile and clinical background
-- Initial presentation
-- Vital signs and observations
-- Relevant investigations
-- Scenario phases and progression
-- Expected learner actions
-- Treatment and medication considerations
-- Faculty and simulated-patient guidance
-- Equipment and environmental requirements
-- Moulage requirements
-- Debriefing prompts
-- Suggested educational resources
-
-Outputs are adapted to the requested learner group, profession, setting and level of complexity.
-
-## Clinical safety and synthetic data
-
-SimuGen is designed for **healthcare education and simulation**, not for directing the diagnosis or treatment of a real patient.
-
-Generated scenarios should use fictional training information only.
-
-SimuGen is instructed not to request or generate genuine:
-
-- NHS numbers
-- Patient record numbers
-- Home addresses
-- Telephone numbers
-- Government identifiers
-- Other identifiable real-patient information
-
-Users should not provide identifiable patient information or protected health information when creating scenarios.
-
-Clinical content generated by AI can be incomplete or inaccurate. Educators remain responsible for reviewing scenarios before using them in teaching or assessment and should verify clinical information against current authoritative guidance and local organisational policies.
-
-## UK clinical context
-
-Where relevant, SimuGen is designed to work with UK healthcare terminology and recognised authoritative sources such as:
-
-- [NICE](https://www.nice.org.uk/)
-- [NHS](https://www.nhs.uk/)
-- [Resuscitation Council UK](https://www.resus.org.uk/)
-- [British National Formulary](https://bnf.nice.org.uk/)
-- Relevant Royal Colleges and professional bodies
-- Current national and local clinical guidance
-
-SimuGen should not fabricate citations, guideline recommendations or claims of alignment with guidance that has not been verified.
-
-## Plugin architecture
-
-SimuGen is implemented as a skills-only OpenAI plugin.
-
-```text
-plugin/
-├── plugin.json
-├── assets/
-│   └── logo.png
-└── skills/
-    └── generate-clinical-scenario/
-        ├── SKILL.md
-        ├── agents/
-        │   └── openai.yaml
-        └── references/
-            ├── clinical-evidence.md
-            └── scenario-structure.md
-```
-
-### `plugin.json`
-
-Defines the portable plugin metadata, branding, public URLs and ChatGPT interface information.
-
-### `SKILL.md`
-
-Defines when the clinical scenario generation skill should activate and contains its core workflow, safety boundaries and completion criteria.
-
-### `agents/openai.yaml`
-
-Provides skill-specific presentation metadata for OpenAI products.
-
-### `references/scenario-structure.md`
-
-Contains the detailed structure used when generating complete clinical simulation packages, including patient information, observations, progression, faculty guidance, equipment and debriefing.
-
-### `references/clinical-evidence.md`
-
-Defines how clinical evidence, guidelines, medicines and current healthcare information should be handled and verified.
-
-## No external infrastructure required
-
-SimuGen currently requires no:
-
-- Backend service
-- Database
-- User account
-- Authentication
-- MCP server
-- External plugin API
-
-The plugin operates entirely through its packaged skills and the capabilities provided by the host OpenAI product.
-
-## Website
-
-The public SimuGen website is hosted using GitHub Pages:
-
-**https://smcnab1.github.io/SimuGen/**
-
-It provides project information together with the current privacy policy and terms of service.
-
-The website is a statically exported Next.js application and does not operate its own backend or database.
-
-### Public pages
-
-- [SimuGen](https://smcnab1.github.io/SimuGen/)
-- [Privacy Policy](https://smcnab1.github.io/SimuGen/privacy/)
-- [Terms of Service](https://smcnab1.github.io/SimuGen/terms/)
-
-## Development
-
-### Requirements
-
-- Node.js 24 LTS
-- npm
-
-### Install dependencies
+The website uses Node.js 24 LTS and npm.
 
 ```bash
 npm ci
-```
-
-### Run locally
-
-```bash
-npm run dev
-```
-
-### Lint
-
-```bash
 npm run lint
-```
-
-### Production build
-
-```bash
+npm run typecheck
+npm run check:plugin
 npm run build
 ```
 
-The production build uses Next.js static export and outputs the website to `out/` for deployment through GitHub Pages.
+Use `npm run dev` for local development. The production build exports the site to `out/` for GitHub Pages. The plugin check needs Git and Info-ZIP `unzip`, builds the ZIP from committed `HEAD:plugin` and verifies it against the published schema and repository files.
 
-## Repository structure
+Package the contents of `plugin/` for submission. See the [host acceptance tests](submission/test-cases.md) and [submission release notes](submission/release-notes.md).
 
-```text
-SimuGen/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   └── workflows/
-│       └── pages.yml
-├── app/                          # Public website
-├── components/                   # Website components
-├── plugin/                       # OpenAI plugin package
-│   ├── assets/
-│   ├── skills/
-│   └── plugin.json
-├── public/                       # Website assets
-├── submission/                   # Public-submission test material
-│   ├── release-notes.md
-│   └── test-cases.md
-├── CHANGELOG.md
-├── LICENSE.md
-├── PRIVACY.md
-├── README.md
-└── TERMS.md
-```
+## Support and contributions
 
-## Submission testing
-
-Submission tests are maintained in:
-
-```text
-submission/test-cases.md
-```
-
-The v1.0.0 test set covers:
-
-- Fully specified scenario generation
-- Clarification of broad requests
-- Paediatric scenario generation
-- User-supplied learning outcomes
-- Complete faculty-ready packages
-- Identifiable real-patient information
-- Real-patient clinical-management requests
-- Requests to fabricate evidence or guideline references
-
-Release-specific submission information is maintained in:
-
-```text
-submission/release-notes.md
-```
-
-These files are repository documentation and are not part of the packaged plugin itself.
-
-## Packaging
-
-The public plugin package consists of the contents of:
-
-```text
-plugin/
-```
-
-The website, repository documentation, submission notes and development configuration are not required inside the submitted plugin package.
-
-## Roadmap
-
-Development beyond the initial public release will focus on useful, distinct simulation workflows rather than expanding the generator unnecessarily.
-
-Potential additions include:
-
-- Clinical simulation scenario review
-- Structured quality and educational-design feedback
-- Scenario improvement recommendations
-- Additional reusable simulation resources and templates
-
-Distinct workflows will be implemented as separate skills where appropriate.
-
-See the [GitHub issues](https://github.com/smcnab1/SimuGen/issues) for current work and feature requests.
-
-## Contributing
-
-Contributions, bug reports and suggestions are welcome.
-
-For a code contribution:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make and test your changes.
-4. Commit the changes.
-5. Push your branch.
-6. Open a pull request.
-
-For bugs, feature requests, support questions or concerns about generated clinical content, use the appropriate [GitHub issue form](https://github.com/smcnab1/SimuGen/issues/new/choose).
-
-Please do not include confidential, identifiable patient or sensitive personal information in issues, discussions or pull requests.
-
-See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for further guidance.
-
-## Clinical-content concerns
-
-Potentially inaccurate, unsafe, outdated or educationally inappropriate clinical content can be reported using the dedicated **Clinical content issue** form.
-
-Reports should use fictional or synthetic examples only and should not contain identifiable patient information.
-
-## Security
-
-Security vulnerabilities should not be reported through public GitHub issues.
-
-Use [GitHub Private Vulnerability Reporting](https://github.com/smcnab1/SimuGen/security/advisories/new) instead.
-
-See [SECURITY.md](.github/SECURITY.md) for further information.
-
-## Privacy
-
-SimuGen does not operate its own conversation-processing backend or database.
-
-See:
-
-- [Privacy Policy](https://smcnab1.github.io/SimuGen/privacy/)
-- [PRIVACY.md](PRIVACY.md)
-
-## Terms
-
-Use of SimuGen is subject to its terms of service.
-
-See:
-
-- [Terms of Service](https://smcnab1.github.io/SimuGen/terms/)
-- [TERMS.md](TERMS.md)
-
-## Support
-
-For support, bug reports and feature requests:
-
-[github.com/smcnab1/SimuGen/issues](https://github.com/smcnab1/SimuGen/issues)
-
-## Licence
-
-SimuGen is released under the [MIT Licence](LICENSE.md).
-
-Copyright © 2026 Sam McNab.
+- [Contributing](.github/CONTRIBUTING.md)
+- [Report an issue or clinical content concern](https://github.com/smcnab1/SimuGen/issues/new/choose)
+- [Report a vulnerability privately](https://github.com/smcnab1/SimuGen/security/advisories/new)
+- [Privacy policy](PRIVACY.md) · [Terms of service](TERMS.md) · [MIT Licence](LICENSE.md)

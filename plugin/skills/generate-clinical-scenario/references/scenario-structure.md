@@ -1,5 +1,3 @@
-# FILE: references/scenario-structure.md
-
 # Clinical Scenario Structure
 
 Use this reference when producing a complete clinical simulation scenario or when the user requests one or more of these components.
@@ -356,3 +354,28 @@ Present the scenario as clear phases or states with:
 - observations
 - learner actions
 - resulting change
+
+## Conversational delivery and handovers
+
+Use this optional structure when a case will be run or handed over. Existing scenario packages and educator templates can supply the same information without reformatting. Keep the written case separate from the learner view when learners share the conversation.
+
+### Case handover
+
+- **Context** - fictional case label, setting, learner role and level, learning objectives, available resources and supervision.
+- **Learner entry** - learner-facing aims, visible cues, opening speech and information the learner already has. Keep objectives that would reveal answers in the faculty plan.
+- **Case plan** - phase-specific findings grouped by release condition (entry, question, assessment, investigation, action or phase). For each result, note availability and dependencies.
+- **Progression** - trigger, next phase, change in findings and endpoint. Include responses to appropriate actions and realistic delays or omissions, where defined. List acceptable alternatives and expected actions as faculty guidance.
+- **Limits** - material assumptions, missing facts, local policy dependencies and any evidence that needs checking. Use a conservative qualitative result or mark information unavailable when the source does not establish a value.
+
+When the user requests both generation and an immediate blind run, prepare the plan before opening the encounter and show only the learner entry. If the user already has the full case in the same chat, explain that it is visible there and offer a fresh variant for blind practice.
+
+### Encounter record
+
+At completion, supply a short record suitable for debriefing in the current chat or copying into a separate conversation. Include:
+
+- **Context** - case label, objectives, setting, role and completion point.
+- **Events** - key actions in order for the current attempt. Identify who acted, including simulated team and facilitator interventions. Distinguish requests and intended actions from completed actions. Include communications, escalation and reassessments that occurred.
+- **Findings and progression** - evidence actually disclosed, material state changes and their case triggers, and the state at closure.
+- **Debrief focus** - objective-linked moments for discussion and limits of the available evidence. Leave unconfirmed actions and learner reasoning open for clarification.
+
+Use only information supported by the conversation. If detail is missing, say so. Omit identifiers and any unreleased faculty material. If reproducing order is necessary, use event order from the conversation and include elapsed time only when the simulation recorded it.

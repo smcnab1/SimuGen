@@ -60,21 +60,23 @@ export default function PrivacyPage() {
           </h1>
 
           <p className="mt-4 text-sm text-white/35">
-            Last updated: 23 September 2026
+            Last updated: 23 November 2026
           </p>
         </div>
 
         <div className="mt-10 overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.035] backdrop-blur">
           <LegalSection title="Overview">
-            SimuGen is an open-source ChatGPT plugin for creating clinical
-            simulation scenarios. SimuGen does not operate its own backend
+            SimuGen is an open-source ChatGPT plugin for working with fictional
+            clinical simulations. SimuGen does not operate its own backend
             service, user accounts, analytics platform or database.
           </LegalSection>
 
           <LegalSection title="Information processed by SimuGen">
             SimuGen does not independently collect, transmit or store the
-            contents of your conversations. Your use of ChatGPT remains subject
-            to OpenAI&apos;s own privacy and data-handling terms.
+            contents of your conversations. The host processes prompts,
+            attachments and encounter records you share under OpenAI&apos;s
+            privacy and data-handling terms. Keep faculty answer keys out of
+            learner chats.
           </LegalSection>
 
           <LegalSection title="Patient and health information">

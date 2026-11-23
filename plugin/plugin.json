@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "simugen",
-  "version": "1.0.0",
-  "description": "Create realistic clinical simulation scenarios for healthcare education.",
+  "version": "1.1.0",
+  "description": "Design, run, debrief and review fictional clinical simulations for healthcare education.",
   "author": {
     "name": "Sam McNab",
     "url": "https://github.com/smcnab1"
@@ -21,15 +21,15 @@
     "com.openai": {
       "interface": {
         "displayName": "SimuGen",
-        "shortDescription": "Clinical simulation scenarios",
-        "longDescription": "Create structured healthcare simulation scenarios with realistic clinical presentations, observations, scenario progression, faculty guidance and debriefing prompts.",
+        "shortDescription": "Clinical simulation toolkit",
+        "longDescription": "Create structured scenarios, practise fictional patient encounters turn by turn, reflect on your decisions in a guided debrief and review teaching scenarios.",
         "developerName": "Sam McNab",
         "category": "Education & Research",
         "capabilities": [
           "Generate clinical simulation scenarios",
-          "Design scenario progression",
-          "Create faculty guidance",
-          "Create debriefing prompts"
+          "Practise interactive patient encounters",
+          "Debrief completed simulations",
+          "Review scenarios for teaching"
         ],
         "websiteURL": "https://smcnab1.github.io/SimuGen/",
         "supportURL": "https://github.com/smcnab1/SimuGen/issues",
@@ -37,8 +37,8 @@
         "termsOfServiceURL": "https://smcnab1.github.io/SimuGen/terms/",
         "defaultPrompt": [
           "Create a paramedic simulation scenario",
-          "Create a nursing simulation scenario",
-          "Create a paediatric emergency scenario"
+          "Run a fictional patient encounter, then debrief my decisions",
+          "Review my clinical simulation scenario for teaching"
         ],
         "composerIcon": "./assets/logo.png",
         "logo": "./assets/logo.png"

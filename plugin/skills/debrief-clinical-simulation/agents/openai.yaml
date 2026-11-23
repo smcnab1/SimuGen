@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clinical Simulation Debrief"
+  short_description: "Reflect on a completed simulation"
+  default_prompt: "Debrief my completed simulation with one question at a time."

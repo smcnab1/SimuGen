@@ -1,73 +1,40 @@
-# SimuGen v1.0.0 Release Notes
+# SimuGen v1.1.0 Submission Notes
 
-## Initial public release
+GitHub release date **23 November 2026**.
 
-SimuGen v1.0.0 is the first public plugin release of SimuGen for ChatGPT.
+## Changes
 
-SimuGen is designed to help healthcare educators create structured, realistic and educationally purposeful clinical simulation scenarios.
+- **Interactive Clinical Simulation** adds text-only fictional patient encounters with staged findings, case-based progression and a concise encounter record.
+- **Conversational Clinical Debrief** adds guided formative reflection on recorded decisions and actions, with one substantive question per turn.
+- **Clinical Scenario Reviewer** reviews supplied educational material for clinical consistency, learning design, facilitation, inclusion and evidence. It gives prioritised findings and proposes revisions when requested.
+- **Clinical Scenario Generator** retains the existing written scenario workflow. Its activation guidance distinguishes authoring a case or debrief plan from running, debriefing and reviewing.
 
-## Included in v1.0.0
+All four skills are included in the portable package under `plugin/`. They share clinical evidence guidance, educational standards and handover conventions. UK practice and terminology remain the default.
 
-- Clinical simulation scenario generation for healthcare education.
-- UK healthcare terminology and context by default.
-- Adaptation to profession, learner level, specialty and healthcare setting.
-- Structured learning objectives.
-- Fictional patient profiles and clinical histories.
-- Clinically plausible observations and examination findings.
-- Relevant investigations and information-release points.
-- Scenario progression linked to learner actions.
-- Expected learner actions appropriate to learner scope.
-- Faculty guidance and simulated-patient information.
-- Equipment, environment and moulage requirements.
-- Debriefing prompts linked to learning objectives.
-- Support for concise scenario outlines and complete faculty-ready packages.
-- Synthetic patient-data safeguards.
-- Clear separation between simulation design and real-patient clinical care.
-- Evidence-handling guidance that prevents fabricated citations or unsupported claims of guideline alignment.
-- Skill-specific metadata for ChatGPT.
-- Public website, privacy policy, terms of service and GitHub-based support.
+## Clinical governance
 
-## Architecture
+Before reporting a NEWS2 total, verify each component against the applicable scoring chart and check the arithmetic. If verification is unavailable, leave the score unverified.
 
-SimuGen v1.0.0 is a skills-only OpenAI plugin.
+Use fictional cases for formative learning with qualified faculty oversight where applicable. Check current clinical guidance and local requirements before using material in education. Keep identifiers and confidential material out of all inputs. A text-based encounter follows a case plan. Secure assessment, physiological modelling and certification of competence are outside the supported use.
 
-It does not require:
+The [educational reference](../plugin/skills/generate-clinical-scenario/references/educational-standards.md) covers ASPiH 2023, the four revised INACSL Cornerstones (2025), current HCPC requirements and the revised standards effective September 2027. It also describes the PEARLS approach used to support formative debriefing. Use the linked primary sources to check applicability for the intended programme.
 
-- an external backend
-- a database
-- authentication
-- user accounts
-- an MCP server
-- external plugin APIs
+## Validation and limits
 
-The initial release contains one primary skill:
+| Evidence | What it covers |
+| --- | --- |
+| GitHub release candidate checks | Locked installation, ESLint, TypeScript, static site export, YAML, published manifest schema and OpenAI metadata, skill identities, package contents, licence, versions and repository paths. |
+| Owner-reported smoke tests | G09B passed after the NEWS2 fix. R13 passed with text-only patient interaction. The reviewer flagged contradictory observations and prescribing outside the student's scope, consistent with V02 and V04. |
+| Observed ward simulation and debrief | One ChatGPT transcript showed natural patient replies, staged initial and repeat observations, separation of ECG intent from action, nurse arrival at reassessment, and an accurate encounter record. Both debrief turns asked one question and the follow-up used the learner's stated concern and recorded actions. This covers the observed portions of R05, D01 and T05. The transcript does not establish the installed ZIP or skill activation. |
+| Outstanding host checks | Skill discovery, packaged reference reads, G09A, repeat runs, fresh-chat debrief handover and the other unexecuted [checklist cases](test-cases.md) remain open. |
+| Owner-led faculty acceptance | **Accepted with conditions.** Sam McNab, HCPC-registered paramedic and Senior Lecturer in Simulation & Immersive Technologies, reviewed representative materials and observed workflows on 23 November 2026. He authorised the formative education release with the outstanding host checks recorded above. [Faculty acceptance and release authorisation](https://github.com/smcnab1/SimuGen/pull/7#issuecomment-7103486604) |
 
-`generate-clinical-scenario`
+Instructions guide the model's output. It may drift from the authored case or lose earlier turns in long conversations. Resume from a reliable learner-safe checkpoint and the case where available. Keep the faculty key in a separate faculty-only conversation and check all clinical content before teaching. A role label in a chat cannot control access to material in that chat.
 
-Additional simulation workflows may be introduced as separate skills in future releases.
+## Owner acceptance and release
 
-## Safety and privacy
+The owner approval covers the plugin tree `786d1c6ea6a9d2354f386605c6e43a76733fc633`. Educators must verify clinical guidance, treatment recommendations and assessment expectations before formal teaching. Use feedback for formative learning and keep faculty answer keys separate. Address any critical clinical or educational defect before continued distribution.
 
-SimuGen is intended for healthcare education and simulation design.
+The [GitHub release](https://github.com/smcnab1/SimuGen/releases/tag/v1.1.0) records the ZIP checksum. In the existing SimuGen entry, choose **Upload plugin to make changes**. Check the imported version, assets and four skills under **Metadata & Skills**. Resolve required dashboard findings and submit the version for review. After OpenAI approves it, publish the approved version and verify the listing, skill discovery and a smoke encounter. [OpenAI plugin update instructions](https://developers.openai.com/plugins/deploy/submission#update-your-published-plugin)
 
-It should not be used to direct the diagnosis or treatment of a real patient.
-
-Users should not provide identifiable patient information, protected health information or genuine healthcare identifiers.
-
-Generated patient information is intended to be fictional and synthetic.
-
-AI-generated clinical content can be incomplete or inaccurate and should be reviewed by an appropriately qualified educator before use in teaching or assessment.
-
-## Support
-
-Issues, feature requests and clinical-content concerns can be submitted through:
-
-https://github.com/smcnab1/SimuGen/issues
-
-Security vulnerabilities should be reported privately through GitHub Security Advisories.
-
-## Version
-
-Version: 1.0.0
-
-Release date: 23 September 2026
+Keep the [v1.0.0 release notes](https://github.com/smcnab1/SimuGen/blob/1388ce0f5efb41aa4cd91c5280c69d6a4f552962/submission/release-notes.md) as the historical record.

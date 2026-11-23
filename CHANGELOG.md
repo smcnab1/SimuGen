@@ -6,13 +6,25 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-23
+
 ### Added
+
+- Interactive fictional patient encounters with text-only learner turns, staged findings, case-based progression and learner controls.
+- Guided formative debriefing grounded in a simulation record, transcript or learner account.
+- Educator review of scenario quality, including actionable findings and standards mapping.
+- Shared case and encounter handovers, educational standards guidance and host acceptance tests.
+- Pull-request checks for the static website and the portable plugin ZIP.
 
 ### Changed
 
+- Retained written scenario generation and clarified its prompts so users can choose between design, practice, debrief and review.
+
 ### Fixed
 
-### Removed
+- Clarified queued events, pause and restart, and who did what in encounter records. Review findings now identify whether the evidence confirms the issue.
+- NEWS2 guidance requires verification of each component against the applicable scoring chart and a check of the arithmetic before reporting a total. If verification is unavailable, the score remains unverified.
+- Updated the static site's Next.js dependencies to patched versions.
 
 ## [1.0.0] - 2026-09-23
 
@@ -47,5 +59,6 @@ Initial public plugin release.
 - Dependency on the previous GPT Store implementation as the primary SimuGen distribution model.
 - Legacy project-template changelog content.
 
-[Unreleased]: https://github.com/smcnab1/SimuGen/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/smcnab1/SimuGen/releases/tag/v1.0.0
+[Unreleased]: https://github.com/smcnab1/SimuGen/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/smcnab1/SimuGen/releases/tag/v1.1.0
+[1.0.0]: https://github.com/smcnab1/SimuGen/blob/1388ce0f5efb41aa4cd91c5280c69d6a4f552962/submission/release-notes.md
