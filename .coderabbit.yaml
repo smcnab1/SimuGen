@@ -22,3 +22,5 @@ reviews:
       instructions: "Check keyboard navigation, focus, accessible names and responsive behaviour. Flag regressions in privacy disclosures or discrepancies between the website and the plugin's actual capabilities."
     - path: ".github/workflows/**"
       instructions: "Preserve locked builds, plugin validation, static site checks and existing publishing controls. Flag changes that could publish unreviewed content."
+    - path: "{scripts,submission}/**"
+      instructions: "Flag weakened manifest, skill reference or release ZIP checks. Keep submission test cases aligned with skill behaviour and distinguish automated validation from observed ChatGPT host acceptance."
