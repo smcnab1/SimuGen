@@ -1,5 +1,7 @@
 # SimuGen
 
+<img src="public/logo.png" width="96" alt="SimuGen logo">
+
 SimuGen is an open-source ChatGPT plugin for designing, running, debriefing and reviewing fictional clinical simulations. It uses UK clinical terminology and practice by default and adapts to the profession, learner level, setting and requested jurisdiction.
 
 [Open in ChatGPT](https://chatgpt.com/plugins/plugins_6ab3b44c4dac8191974976c0d09f0180) · [Project website](https://smcnab1.github.io/SimuGen/) · [Changelog](CHANGELOG.md)
